@@ -1,20 +1,24 @@
-//   A
-//   AB
-//   ABC
-//   ABCD
-//   ABCDE
+// 12345
+//  1234
+//   123
+//    12
+//     1
+//
 
 import java.util.Scanner;
 
-public class Three {
-    public static void main(String ar[]){
+public class Four {
+    public static void main(String aregs[]){
         try{
             Scanner sc=new Scanner(System.in);
             int n=sc.nextInt();
             sc.close();
             for(int i=0;i<n;i++){
-                for(int j=0;j<i+1;j++){
-                    System.out.print((char)(j+65));
+                for(int j=0;j<i;j++){
+                    System.out.print(" ");
+                }
+                for(int j=1;j<=n-i;j++){
+                    System.out.print(j);
                 }
                 System.out.println();
             }
@@ -22,4 +26,5 @@ public class Three {
             e.printStackTrace();
         }
     }
+    
 }
